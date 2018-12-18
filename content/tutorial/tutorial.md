@@ -445,7 +445,7 @@ To maintain the Board's state's privacy, we'll pass down a function from the Boa
 
 >Note
 >
->We split the returned element into multiple lines for readability, and added parentheses so that JavaScript doesn't insert a semicolon after `return` and break our code.
+>We split the returned element into multiple lines for readability, and added curly brackets so that JavaScript doesn't insert a semicolon after `return` and break our code.
 
 Now we're passing down two props from Board to Square: `value` and `onClick`. The `onClick` prop is a function that Square can call when clicked. We'll make the following changes to Square:
 
@@ -609,7 +609,7 @@ We have changed `this.props` to `props` both times it appears.
 
 >Note
 >
->When we modified the Square to be a function component, we also changed `onClick={() => this.props.onClick()}` to a shorter `onClick={props.onClick}` (note the lack of parentheses on *both* sides). In a class, we used an arrow function to access the correct `this` value, but in a function component we don't need to worry about `this`.
+>When we modified the Square to be a function component, we also changed `onClick={() => this.props.onClick()}` to a shorter `onClick={props.onClick}` (note the lack of curly brackets on *both* sides). In a class, we used an arrow function to access the correct `this` value, but in a function component we don't need to worry about `this`.
 
 ### Taking Turns
 
